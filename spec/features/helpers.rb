@@ -17,8 +17,8 @@ module Helpers
     def add_image()
       visit '/images'
       click_link 'Add an image'
-      # fill_in 'Name', with: name
-      # click_button 'Create Restaurant'
+      fill_in 'Title', with: 'A lovely Gran'
+      click_button 'Create Image' #don't know how to change label of button?
     end
 
     def add_comment(comment)

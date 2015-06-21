@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   get 'images' => 'images#index'
 
+  resources :images
+
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 

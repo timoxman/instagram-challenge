@@ -1,0 +1,12 @@
+No of images: <%= @image_count %> <br>
+
+<% if @images.any? %>
+  <% @images.each do |image| %>
+    <h2><%= image.title %></h2>
+    <a href="#">Add a comment</a>
+  <% end %>
+<% else %>
+  <h3>No images yet</h3>
+<% end %>
+
+<%= link_to "Add an image", new_image_path %>
